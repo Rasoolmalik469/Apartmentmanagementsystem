@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<style>
+		 body {
+            font-family: Arial, sans-serif;
+              background: url(https://wallpapercave.com/wp/wp2059171.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+        }
+        .bg-color-white{
+			color :rgb(255, 255, 255);
+		}
+	</style>
+
+<body>
+
+<header>
+  <div th:replace="common/header.html :: header"></div>
+</header>
+
+<main>
+  <div>
+    <h1>New Apartment</h1>
+    <form th:action="@{/createApartment}" method="post">
+      <input class='form-control' type="hidden" name="ownerId" th:value="${ownerId}"/>
+      <div>
+        <label class='form-label'> Owner ID</label>
+        <input class='form-control' type="text" name="ownerId"/>
+      </div>
+      <div>
+        <label class='form-label'> Apartment Number</label>
+        <input class='form-control' type="text" name="apartmentNumber"/>
+      </div>
+      <div>
+        <label class='form-label'> Floor</label>
+        <input class='form-control' type="text" name="floor"/>
+      </div>
+      <div>
+        <label class='form-label'> Square Footage</label>
+        <input class='form-control' type="text" name="squareFootage"/>
+      </div>
+      <div>
+        <label class='form-label'> Number of Bedrooms</label>
+        <input class='form-control' type="text" name="numBedrooms"/>
+      </div>
+      <div>
+        <label class='form-label'> Number of Bathrooms</label>
+        <input class='form-control' type="text" name="numBathrooms"/>
+      </div>
+      <div>
+        <label class='form-label'> Monthly Rent</label>
+        <input class='form-control' type="text" name="monthlyRent"/>
+      </div>
+      <button type="submit" class="btn btn-primary">Create new Apartment</button>
+    </form>
+  </div>
+
+  <div>
+    <h1>Apartment List</h1>
+    <div th:replace="apartmentList :: main"></div>
+  </div>
+</main>
+
+</body>
+</html>

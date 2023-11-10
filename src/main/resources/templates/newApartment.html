@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: url(https://wallpapercave.com/wp/wp2059171.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  .match-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .btn-dark {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn-dark:hover {
+    background-color: #292e31;
+  }
+
+  .pull-right {
+    float: right;
+  }
+
+  
+  .btn-dark:hover {
+    background-color: #22272A; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05); 
+  }
+
+  .table {
+    margin-top: 60px; 
+  }
+</style>
+</head>
+<body>
+<div class="match-wrapper">
+  <form th:action="@{/newApartmentWithOutOwner}">
+    <button class="btn btn-dark pull-right">Add New Apartment</button>
+  </form>
+</div>
+
+</body>
+</html>
