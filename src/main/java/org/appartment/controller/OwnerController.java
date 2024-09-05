@@ -13,9 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
-/**
- * Created by Rasool Malik Vempalli
- */
+/** Rasool Malik Vempalli **/
 @Controller
 public class OwnerController {
 

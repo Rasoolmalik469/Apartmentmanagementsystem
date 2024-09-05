@@ -5,6 +5,7 @@ import javax.persistence.*;
 /**
  * Created by Rasool Malik Vempalli
  */
+
 @Entity
 @Table(name = "Vehicles")
 public class Vehicle {

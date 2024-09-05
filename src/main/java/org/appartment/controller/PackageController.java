@@ -14,29 +14,25 @@ import org.springframework.web.bind.annotation.GetMapping;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
-/**
- * Created by Rasool Malik Vempalli
- */
+/** Rasool Malik Vempalli **/
+
 @Controller
 public class PackageController {
 
+	@Autowired
+	private PackageService packageService;
 
+	@GetMapping("/getUserPackageList")
+	public String getUserPackageList(HttpSession session, Model model) {
+		User user = (User) session.getAttribute("currentUser");
 
-    @Autowired
-    private PackageService packageService;
+		if (user == null) {
+			return "redirect:/";
+		}
 
-
-    @GetMapping("/getUserPackageList")
-    public String getUserPackageList(HttpSession session, Model model) {
-        User user = (User) session.getAttribute("currentUser");
-
-        if (user == null) {
-            return "redirect:/";
-        }
-
-        model.addAttribute("user", user);
-        List<Delivery> delivery =  packageService.getAllPackage();
-        model.addAttribute("delivery",delivery);
-        return "packageListUser";
-    }
+		model.addAttribute("user", user);
+		List<Delivery> delivery = packageService.getAllPackage();
+		model.addAttribute("delivery", delivery);
+		return "packageListUser";
+	}
 }

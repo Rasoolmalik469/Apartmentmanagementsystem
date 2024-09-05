@@ -12,10 +12,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
+
+
 /**
  * Created by Rasool Malik Vempalli
  */
-
 @Controller
 public class VehicleController {
 

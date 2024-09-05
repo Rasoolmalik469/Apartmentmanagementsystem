@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 /**
- * Created by Rasool Malik Vempalli 
+ * Created by Rasool Malik Vempalli
  */
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {

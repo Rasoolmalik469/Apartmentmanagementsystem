@@ -3,6 +3,7 @@ package org.appartment.model;
 import javax.persistence.*;
 import java.time.LocalDate;
 
+
 /**
  * Created by Rasool Malik Vempalli
  */

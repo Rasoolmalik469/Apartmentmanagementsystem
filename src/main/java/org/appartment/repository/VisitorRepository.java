@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 /**
  * Created by Rasool Malik Vempalli
  */
+
 @Repository
 public interface VisitorRepository extends JpaRepository<Visitor, Integer> {
 }

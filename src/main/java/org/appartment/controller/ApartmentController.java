@@ -12,10 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
+/** Rasool Malik Vempalli **/
 
-/**
- * Created by Rasool Malik Vempalli
- */
 @Controller
 public class ApartmentController {
 

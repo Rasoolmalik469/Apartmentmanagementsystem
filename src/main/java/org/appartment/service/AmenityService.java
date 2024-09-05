@@ -12,6 +12,7 @@ import java.util.List;
 /**
  * Created by Rasool Malik Vempalli
  */
+
 @Service
 public class AmenityService {
 

@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 /**
  * Created by Rasool Malik Vempalli
  */
+
 @Entity
 @Table(name = "Visitors")
 public class Visitor {

@@ -4,8 +4,9 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 /**
- * Created by Rasool Malik Vempalli on 10-05-2023.
+ * Created by Rasool Malik Vempalli
  */
+
 @Entity
 @Table(name = "MaintenanceAssignments")
 public class MaintenanceAssignment {

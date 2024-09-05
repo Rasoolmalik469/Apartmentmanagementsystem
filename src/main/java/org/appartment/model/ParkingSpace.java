@@ -2,6 +2,7 @@ package org.appartment.model;
 
 import javax.persistence.*;
 
+
 /**
  * Created by Rasool Malik Vempalli
  */

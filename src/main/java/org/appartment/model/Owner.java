@@ -3,6 +3,7 @@ package org.appartment.model;
 import javax.persistence.*;
 import java.util.List;
 
+
 /**
  * Created by Rasool Malik Vempalli
  */

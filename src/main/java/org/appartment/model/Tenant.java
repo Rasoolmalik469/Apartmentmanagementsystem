@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * Created by Rasool Malik Vempalli
  */
+
 @Entity
 @Table(name = "Tenants")
 public class Tenant {
